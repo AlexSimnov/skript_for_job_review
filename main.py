@@ -16,9 +16,9 @@ content = os.listdir(loc)
 filename = ''
 
 for file in content:
-    if len(file) > 20:
+    if file.startswith('Симонов'):
         filename = file
-    break
+        break
         
 
 car_dict = {}
